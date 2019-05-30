@@ -1,4 +1,5 @@
 scala-json
+[![Known Vulnerabilities](https://snyk.io/test/github/MediaMath/scala-json/badge.svg?targetFile=build.sbt)](https://snyk.io/test/github/MediaMath/scala-json?targetFile=build.sbt)
 ==========
 ```scala
 import json._
@@ -59,10 +60,10 @@ SBT
 resolvers += "mmreleases" at "https://artifactory.mediamath.com/artifactory/libs-release-global"
 
 //scala
-libraryDependencies += "com.mediamath" %% "scala-json" % "1.0"
+libraryDependencies += "com.mediamath" %% "scala-json" % "1.1"
 
 //or scala + scala-js/scala-native
-libraryDependencies += "com.mediamath" %%% "scala-json" % "1.0"
+libraryDependencies += "com.mediamath" %%% "scala-json" % "1.1"
 
 //for @accessor annotation support
 resolvers += Resolver.sonatypeRepo("releases")
@@ -75,6 +76,7 @@ Dependencies
 * [macro-paradise](http://docs.scala-lang.org/overviews/macros/paradise.html) 2.1.0+ required for @accessor annotation
 * [jackson](https://github.com/FasterXML/jackson) for JVM JSON string parsing
 * [jansson](https://github.com/akheron/jansson) for Scala Native JSON string parsing
+* [re2](https://github.com/google/re2) for fast and safe RegEx
 * [µTest](https://github.com/lihaoyi/utest) for testing
 * [tut](https://github.com/tpolecat/tut) for doc building
 
